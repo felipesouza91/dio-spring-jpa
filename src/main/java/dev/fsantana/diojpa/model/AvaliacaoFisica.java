@@ -2,11 +2,13 @@ package dev.fsantana.diojpa.model;
 
 import java.time.LocalDateTime;
 
-import jakarta.persistence.Entity;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Entity
 public class AvaliacaoFisica {
 
+    @Id
     private Long id;
 
     private Aluno aluno;
