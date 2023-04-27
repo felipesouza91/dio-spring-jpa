@@ -8,16 +8,18 @@ import org.springframework.web.bind.annotation.RestController;
 import dev.fsantana.diojpa.dto.AlunoInput;
 import dev.fsantana.diojpa.dto.AlunoUpdateInput;
 import dev.fsantana.diojpa.model.Aluno;
+import dev.fsantana.diojpa.repository.AlunoRepository;
 import dev.fsantana.diojpa.service.IAlunoService;
+import lombok.AllArgsConstructor;
 
-@RestController
-@RequestMapping("/aluno")
+@AllArgsConstructor
 public class AlunoServiceImpl implements IAlunoService {
+
+  private final AlunoRepository alunoRepository;
 
   @Override
   public Aluno create(AlunoInput data) {
-
-    throw new UnsupportedOperationException("Unimplemented method 'create'");
+    return null;
   }
 
   @Override
