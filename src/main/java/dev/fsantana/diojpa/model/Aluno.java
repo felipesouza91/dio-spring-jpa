@@ -1,14 +1,14 @@
 package dev.fsantana.diojpa.model;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.IdClass;
+
+import lombok.Data;
 
 @Entity
+@Data
 public class Aluno {
 
     @Id
@@ -22,5 +22,5 @@ public class Aluno {
 
     private LocalDate dataNascimento;
 
-    private List<AvaliacaoFisica> avaliacoes = new ArrayList<>();
+    // private List<AvaliacaoFisica> avaliacoes = new ArrayList<>();
 }

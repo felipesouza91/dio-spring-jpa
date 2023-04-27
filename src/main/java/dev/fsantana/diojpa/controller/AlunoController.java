@@ -1,5 +1,6 @@
 package dev.fsantana.diojpa.controller;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -7,4 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/aluno")
 public class AlunoController {
 
+  @GetMapping
+  public String teste() {
+    return "ok";
+  }
 }

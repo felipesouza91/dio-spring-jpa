@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import dev.fsantana.diojpa.model.Aluno;
 
 @Repository
-public interface AlunoRepository extends JpaRepository<Long, Aluno> {
+public interface AlunoRepository extends JpaRepository<Aluno, Long> {
 
 }

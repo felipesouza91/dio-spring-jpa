@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import dev.fsantana.diojpa.model.AvaliacaoFisica;
 
 @Repository
-public interface AvaliacaoFisicaRepository extends JpaRepository<Long, AvaliacaoFisica> {
+public interface AvaliacaoFisicaRepository extends JpaRepository<AvaliacaoFisica, Long> {
 
 }
