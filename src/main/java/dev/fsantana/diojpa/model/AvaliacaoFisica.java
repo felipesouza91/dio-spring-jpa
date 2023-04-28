@@ -4,6 +4,8 @@ import java.time.LocalDateTime;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 import lombok.Data;
 
@@ -14,7 +16,9 @@ public class AvaliacaoFisica {
     @Id
     private Long id;
 
-    // private Aluno aluno;
+    @ManyToOne()
+    @JoinColumn(name = "aluno_id", referencedColumnName = "id")
+    private Aluno aluno;
 
     private LocalDateTime dataAvalicao = LocalDateTime.now();
 
